@@ -404,6 +404,8 @@ Property       |     |Type     |Description
 ---------------------------------------
 ## <a id="Release-Note">Release Note</a>
 
+* v0.2.3 (2021-03-22)
+  * Added new MiroCard payload parser
 * v0.2.2 (2019-11-24)
   * Fixed a bug that the `txPower` of iBeacon was wrong. ([Thanks to @girtgirt](https://github.com/futomi/node-beacon-scanner/pull/12))
   * Fixed a bug that an exception was thrown whenever it received an advertisement packet without service data. ([Thanks to @charlesread](https://github.com/futomi/node-beacon-scanner/issues/11))
@@ -439,6 +441,7 @@ Property       |     |Type     |Description
 The MIT License (MIT)
 
 Copyright (c) 2017-2019 Futomi Hatano
+Copyright (c) 2021 Andres Gomez
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
