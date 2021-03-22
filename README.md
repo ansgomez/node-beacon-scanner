@@ -1,10 +1,11 @@
 node-beacon-scanner
 ===============
 
-The node-beacon-scanner is a Node.js module which allows you to scan BLE beacon packets and parse the packet data. This module supports iBeacon, Eddystone, and Estimote.
+The node-beacon-scanner is a Node.js module which allows you to scan BLE beacon packets and parse the packet data. This module supports MiroCard, iBeacon, Eddystone, and Estimote.
 
 The supported beacon data formats are as follows:
 
+* MiroCard
 * iBeacon
 * Eddystone-UID
 * Eddystone-URL
