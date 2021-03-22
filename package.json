@@ -1,7 +1,7 @@
 {
-  "name": "node-mirocard-scanner",
-  "version": "0.2.3",
-  "description": "The node-mirocard-scanner is based on Fatumi's node-beacon-scanner Node.js module. This module allows you to scan BLE beacon packets coming from MiroCards and parse the packet data.",
+  "name": "node-beacon-scanner",
+  "version": "0.2.2",
+  "description": "The node-beacon-scanner is a Node.js module which allows you to scan BLE beacon packets and parse the packet data. This module supports iBeacon, Eddystone, and Estimote.",
   "main": "./lib/scanner.js",
   "files": [
     "lib"
@@ -13,7 +13,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "MiroCard",
     "Eddystone",
     "iBeacon",
     "Estimote",
@@ -24,12 +23,12 @@
     "IoT",
     "Internet of Things"
   ],
-  "homepage": "https://github.com/ansgomez/node-mirocard-scanner",
-  "author": "Andres Gomez <andres@mirocard.swiss> (https://github.com/ansgomez)",
+  "homepage": "https://github.com/futomi",
+  "author": "Futomi Hatano <futomi.hatano@gmail.com> (https://github.com/futomi)",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ansgomez/node-mirocard-scanner.git"
+    "url": "https://github.com/futomi/node-beacon-scanner.git"
   },
   "readmeFilename": "README.md",
   "dependencies": {
