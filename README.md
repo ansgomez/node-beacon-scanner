@@ -53,12 +53,18 @@ $ npm install node-beacon-scanner
 This sample code shows how to start scanning and how to get parsed packets.
 
 ```JavaScript
-const BeaconScanner = require('node-beacon-scanner');
+const BeaconScanner = require('@ansgomez/node-beacon-scanner');
 const scanner = new BeaconScanner();
 
 // Set an Event handler for becons
 scanner.onadvertisement = (ad) => {
-  console.log(JSON.stringify(ad, null, '  '));
+  // Print full payload
+  // console.log(JSON.stringify(ad, null, '  '));
+  // console.log(ad.mirocard.ad.manufacturerData);
+
+  // Print MiroCard Sensor Data
+  console.log("Temperature: "+ad.mirocard.temp);
+  console.log("Humidity: "+ad.mirocard.rh);
 };
 
 // Start scanning
@@ -73,20 +79,12 @@ The sample code above will output the result as follows:
 
 ```
 Started to scan.
-{
-  "id": "c7dfbfd9f64a",
-  "address": "c7:df:bf:d9:f6:4a",
-  "localName": null,
-  "txPowerLevel": null,
-  "rssi": -59,
-  "beaconType": "iBeacon",
-  "iBeacon": {
-    "uuid": "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
-    "major": 21983,
-    "minor": 57807,
-    "txPower": 180
-  }
-}
+<Buffer 08 01 02 03 04 71 59 67>
+
+Detected MiroCard preamble
+
+Temperature: 26.14
+Humidity: 36.90
 ...
 ```
 
