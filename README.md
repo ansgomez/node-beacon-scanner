@@ -63,8 +63,9 @@ scanner.onadvertisement = (ad) => {
   // console.log(ad.mirocard.ad.manufacturerData);
 
   // Print MiroCard Sensor Data
+  console.log("MAC: "+ad.address);
   console.log("Temperature: "+ad.mirocard.temp);
-  console.log("Humidity: "+ad.mirocard.rh);
+  console.log("Humidity: "+ad.mirocard.rh + "\n");
 };
 
 // Start scanning
@@ -79,12 +80,9 @@ The sample code above will output the result as follows:
 
 ```
 Started to scan.
-<Buffer 08 01 02 03 04 71 59 67>
-
-Detected MiroCard preamble
-
-Temperature: 26.14
-Humidity: 36.90
+MAC: 60:77:71:57:17:83
+Temperature: 23.85
+Humidity: 25.60
 ...
 ```
 
