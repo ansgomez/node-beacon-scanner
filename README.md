@@ -29,7 +29,7 @@ The early versions of this module depended on [noble](https://github.com/sandeep
 ## Installation
 
 ```
-$ cd ~
+$ cd ~/mirocard-scanner
 $ npm install @abandonware/noble
 $ npm install node-beacon-scanner
 ```
@@ -50,6 +50,7 @@ $ npm install node-beacon-scanner
 ---------------------------------------
 ## <a id="Quick-Start">Quick Start</a>
 
+Create a new file inside the `mirocard-scanner` folder and paste the following code.
 This sample code shows how to start scanning and how to get parsed packets.
 
 ```JavaScript
