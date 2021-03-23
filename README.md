@@ -29,9 +29,10 @@ The early versions of this module depended on [noble](https://github.com/sandeep
 ## Installation
 
 ```
+$ mkdir -p ~/mirocard-scanner
 $ cd ~/mirocard-scanner
 $ npm install @abandonware/noble
-$ npm install node-beacon-scanner
+$ npm install @ansgomez/node-beacon-scanner
 ```
 
 ---------------------------------------
